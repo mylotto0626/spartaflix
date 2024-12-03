@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function hey() {
+        $("#title").text("dfdfd");
+      }
+    </script>
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
+      * {
+        font-family: "Gowun Dodum", sans-serif;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .main {
+        color: white;
+        background-image: url(https://occ-0-2218-988.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABTptlvAxhxX43N0TFyjSWoi7Qi4KLctKczxz_M_kFeFgfIAvy6Uk2Xk6_-XCj-usQMakNzvyxkAesGqul_LSKef4ZG6cV5wBlGRX.webp?r=f50);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .mypostingbox {
+        width: 500px;
+        margin: 30px auto 30px auto;
+        padding: 20px 20px 20px 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px 0px #747474;
+      }
+
+      .mycards {
+        width: 1700px;
+        margin: 60px auto 60px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="p-3 text-bg-dark pb-4">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+          >
+            <svg
+              class="bi me-2"
+              width="40"
+              height="32"
+              role="img"
+              aria-label="Bootstrap"
+            >
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+
+          <ul
+            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li>
+              <a href="#" class="nav-link px-3 text-danger">spartaflix</a>
+            </li>
+            <li><a href="#" class="nav-link px-3 text-white">홈</a></li>
+            <li><a href="#" class="nav-link px-3 text-white">시리즈</a></li>
+            <li><a href="#" class="nav-link px-3 text-white">영화</a></li>
+            <li>
+              <a href="#" class="nav-link px-3 text-white">내가 찜한 콘텐츠</a>
+            </li>
+          </ul>
+
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input
+              type="search"
+              class="form-control form-control-dark text-bg-dark"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+          </form>
+
+          <div class="text-end">
+            <button
+              type="button"
+              class="btn btn-outline-light me-2 fw-semibold"
+            >
+              <span class="fw-bold">Login</span>
+            </button>
+            <button type="button" class="btn btn-warning fw-semibold">
+              <span class="fw-bold">Sign-up</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold text-info" id="title">
+            좋아해도 싫어하는
+          </h1>
+          <p class="col-md-8 fs-4">
+            잊지 못할 한여름의 모험 속에서 요괴 소녀와 인간 소년이 영원한 우정을
+            쌓는다. 스튜디오 콜로리도(《울고 싶은 나는 고양이 가면을 쓴다》)가
+            만든 오리지널 영화.
+          </p>
+          <button type="button" onclick="hey()" class="btn btn-info fw-bold">
+            영화 기록하기
+          </button>
+          <button type="button" class="btn btn-info fw-bold">상세 정보</button>
+        </div>
+      </div>
+    </div>
+    <div class="mypostingbox">
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="영화 이미지 주소"
+        />
+        <label for="floatingInput">영화 이미지 주소</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="영화 제목"
+        />
+        <label for="floatingInput">영화 제목</label>
+      </div>
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">별점</label>
+        <select class="form-select">
+          <option selected>별점선택</option>
+          <option value="1">⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="추천 이유"
+        />
+        <label for="floatingInput">추천 이유</label>
+      </div>
+      <button type="button" class="btn btn-info">기록하기</button>
+    </div>
+    <div class="mycards">
+      <div class="row row-cols-1 row-cols-md-4 g-5">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./imgs/demon_slayer_kimetsu_no_yaiba__to_the_hashira_training.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">귀멸의 칼날 합동 강화 훈련</h5>
+              <p class="card-text">⭐⭐⭐⭐</p>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./imgs/gekijouban_violet_evergarden.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">바이올렛 에버가든 : 극장판</h5>
+              <p class="card-text">⭐⭐⭐⭐</p>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./imgs/bubble.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">버블</h5>
+              <p class="card-text">⭐⭐⭐</p>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="./imgs/kimi_no_suizo_o_tabetai.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">너의 췌장을 먹고 싶어</h5>
+              <p class="card-text">⭐⭐⭐</p>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
